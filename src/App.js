@@ -10,14 +10,14 @@ const App = () => {
     return (
         <>
             <div className="app-main">
-            <Routes>
+                <Routes>
 
-            <Route path="/home" element={<Home />}></Route>
-            <Route path="/" element={<Home />}></Route>
+                    <Route path="/home" element={<Home />}></Route>
+                    <Route path="/" element={<Home />}></Route>
 
-            <Route path="/todolist" element={<Todolist />}></Route>
-             
-            </Routes>
+                    <Route path="/todolist" element={<Todolist />}></Route>
+
+                </Routes>
             </div>
         </>
     )
