@@ -226,7 +226,6 @@ export const AddTask = () => {
                             <div className="last-update">
                                 <div>Last Backlog update: {lastBacklogUpdate ? lastBacklogUpdate.toLocaleString() : '-'}</div>
                             </div>
-
                         </div>
                     </div>
                 </Row >
