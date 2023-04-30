@@ -1,2 +1,0 @@
-# todolist
- Creating Todolist Application
