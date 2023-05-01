@@ -1,3 +1,23 @@
+# Tasklogger
+The code is a task logger application built
+using React and ES6. The application can
+create two-column tasks with subtasks and
+percentage competency. The task type can
+be either a sprint or backlog. It includes
+various features like adding new tasks,
+updating task status (pending, ongoing,
+completed), deleting tasks, and resetting the
+application. The application uses local
+storage to store and retrieve data.
+
+## Technology
+- HTML
+- CSS
+- JavaScript (ES6)
+- Bootstrap
+- ReactJS
+
+
 # Setup
 
 ## Config in vite.config.js
@@ -26,7 +46,8 @@ rafce
 ### Using Vite
 
 ```cmd
-npm create vite@latest project_name
+npm create vite@latest project_name 
+
 ```
 ```cmd
 cd project_name
