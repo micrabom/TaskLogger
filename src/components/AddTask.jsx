@@ -53,7 +53,7 @@ export const AddTask = () => {
     }, [lastBacklogUpdate]);
     /* End useEffect */
 
-
+    /* This will be the one who handle the click submit */
     const handleSubmit = (event) => {
         event.preventDefault();
         if (newTask.trim() === '') return;
@@ -72,6 +72,7 @@ export const AddTask = () => {
         }
         setNewTask('');
     };
+
 
     const updateTaskStatus = (id, type, status) => {
         const taskList = type === 'sprint' ? tasks.sp : tasks.bl;
@@ -110,6 +111,7 @@ export const AddTask = () => {
         updateTaskStatus(id, type, 'completed');
     };
 
+    /* Update and formulate the percentage and the length of ask */
     const getCompletedPercentage = (tasksArray) => {
         const totalTasks = tasksArray.length;
         const completedTasks = tasksArray.filter((t) => t.status === 'completed').length;
@@ -134,7 +136,6 @@ export const AddTask = () => {
         if (taskType === 'sprint') {
             setTasks({ ...tasks, sp: tasks.sp.filter((task) => task.id !== taskId) });
             setLastSprintUpdate(new Date());
-
         } else {
             setTasks({ ...tasks, bl: tasks.bl.filter((task) => task.id !== taskId) });
             setLastBacklogUpdate(new Date());
